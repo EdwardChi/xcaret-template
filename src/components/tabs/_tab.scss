@@ -1,0 +1,48 @@
+.tab {
+    background-color: $text-primary-color;
+    & button{
+        background-color: inherit;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: 17px;
+        border-bottom: 1px solid $color-primary;
+        & :hover{
+            background-color: #ddd;
+        }
+        &.active{
+            border: 1px solid $color-primary;
+            border-bottom: 1px solid $text-primary-color;
+            color: $color-primary;
+        }
+    }
+}
+
+.tab_primary{
+    background-color: $color-primary;
+    & button{
+        background-color: inherit;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: 17px;
+        color: white;
+        border: 1px solid $text-primary-color;
+        &:hover{
+            background-color: #ddd;
+        }
+        &.active{
+            border: 1px solid $color-primary;
+            &:before{
+                border-width: 25px 25px 0;
+            }
+            &:hover{
+                background-color: $color-secondary;  
+            }
+        }
+    }
+}

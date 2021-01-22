@@ -1,0 +1,22 @@
+@import './colors';
+@import './size';
+
+@mixin btn-def {
+    background-color: $color-primary;
+    height: 100%;
+    width: 100%;
+}
+
+@mixin first-child() {
+    &:first-of-type {
+      @content
+    }
+};
+
+@import '../../components/header/header';
+@import '../../components/carousel/carousel';
+@import '../../components/tabs/tab';
+@import '../../views/proposal/proposal';
+@import '../../components/card/card_hover';
+@import '../../views/footer/index_footer.scss';
+@import '../../components/cart/cart';
